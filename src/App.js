@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 import DashBoard from './DashBoard/DashBoard';
@@ -9,8 +9,15 @@ import Navbar from './Shared/Navbar';
 import LogIn from './Authentication/LogIn';
 import SignUp from './Authentication/SignUp';
 import Planner from './Pages/Planner/Planner';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 function App() {
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <div className="App">
       <Navbar></Navbar>

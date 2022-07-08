@@ -8,7 +8,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import Navbar from './Shared/Navbar';
 import LogIn from './Authentication/LogIn';
 import SignUp from './Authentication/SignUp';
-import Planner from './Pages/Planner/Planner';
+// import Planner from './Pages/Planner/Planner';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -29,7 +29,7 @@ function App() {
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<LogIn></LogIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/planner' element={<Planner></Planner>}></Route>
+        {/* <Route path='/planner' element={<Planner></Planner>}></Route> */}
       </Route>
       
       

@@ -9,7 +9,7 @@ const Navbar = () => {
    
     </>
     return (
-        <div class="navbar bg-gradient-to-r from-secondary via-purple-500  to-primary">
+        <div class="navbar bg-gradient-to-r from-secondary via-purple-500  to-primary ">
         <div class="navbar-start">
         <label for="my-drawer-2" tabindex="0"  class="btn btn-ghost lg:hidden">
          

@@ -13,13 +13,15 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
+import Appoinmentee from "./Pages/Appoinment/Appoinmentee";
+
 
 function App() {
   useEffect(()=>{
     AOS.init();
   },[])
   return (
-    <div className="App">
+    <div className="mx-w-7xl mx-auto p-5">
       <Navbar></Navbar>
     
     <Routes>
@@ -29,6 +31,7 @@ function App() {
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<LogIn></LogIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/appoinmet' element={<Appoinmentee></Appoinmentee>}></Route>
         {/* <Route path='/planner' element={<Planner></Planner>}></Route> */}
       </Route>
       

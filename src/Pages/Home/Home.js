@@ -11,7 +11,7 @@ import ServicesCard from './ServicesCard';
 
 const Home = () => {
     return (
-        <div className='p-5'>
+        <div >
             <Banner></Banner>
             <ServicesCard></ServicesCard>
             <HeroService></HeroService>
